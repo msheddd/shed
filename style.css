@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header & Nav */
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.call-us {
+    font-weight: bold;
+    color: #d35400; /* Distinct color for the 'Call us' action */
+}
+
+/* Sections & Boxes */
+section {
+    background: #fff;
+    margin-bottom: 20px;
+    border: 2px solid #333;
+    border-radius: 15px; /* Matches your hand-drawn look */
+    overflow: hidden;
+}
+
+/* Banner */
+.hero-banner {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+}
+
+/* Photo Grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    border: none;
+    background: transparent;
+}
+
+.photo-card {
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+/* Contact Box */
+.contact-info {
+    padding: 20px;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}
